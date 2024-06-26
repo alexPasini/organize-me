@@ -1,18 +1,18 @@
-
-<div class="bg-black items-center flex flex-col h-screen w-screen pt-4">
-
-    <header>
-        <img src="../../assets/images/logo_layout.png" alt="imagem de logo do site">
+<div class="flex flex-col items-center w-screen h-screen pt-4 bg-black">
+  <div class="flex flex-col items-center h-screen w-[500px]">
+    <header class="h-16">
+      <img
+        src="../../assets/images/logo_layout.png"
+        alt="imagem de logo do site"
+      />
     </header>
 
-    <main>
-        <router-outlet></router-outlet>
+    <main class="flex items-center justify-center grow">
+      <router-outlet></router-outlet>
     </main>
 
-
-    <footer>
-        footer
+    <footer class="h-16">
+      <app-nav-bar></app-nav-bar>
     </footer>
-
+  </div>
 </div>
-
